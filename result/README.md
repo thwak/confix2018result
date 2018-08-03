@@ -1,6 +1,6 @@
 ConFix generated patches and their information.  
-For each bug, differences between buggy code and human-written/ConFix-generated are given.  
 
+For each bug, differences between buggy code and human-written/ConFix-generated are given.  
 For each ConFix patch, the following information is also presented.  
 
 Assessment of patches including the reason.  

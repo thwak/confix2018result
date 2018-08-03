@@ -46,7 +46,7 @@ TestFailure - the number of candidates with test failures until the patch was ge
 ```
 ### ConFix
 
-**Identical**
+**Identical**  
 ConFix patch modifies the same if condition `dataset != null` to `dataset == null`.
 
 ```
@@ -89,10 +89,10 @@ TestFailure:5
 ```
 ### ConFix
 
-**Equiv.**
-Human patch updates a variable `p1` to `p2`, so that `iterator2` contains the path iterator of `p2`.
-ConFix patch also updates `p1` to `p2`, but for `iterator1`.
-Since remaining code simply compares `iterator1` and `iterator2`, swapping these two produces the same results.
+**Equiv.**  
+Human patch updates a variable `p1` to `p2`, so that `iterator2` contains the path iterator of `p2`.  
+ConFix patch also updates `p1` to `p2`, but for `iterator1`.  
+Since remaining code simply compares `iterator1` and `iterator2`, swapping these two produces the same results.  
 
 ```
 Seed:1
@@ -184,8 +184,8 @@ TestFailure:335
 ```
 ### ConFix
 
-**Equiv.**
-ConFix patch updates `v` to `value`, which provides the same value to `g` like Human patch.
+**Equiv.**  
+ConFix patch updates `v` to `value`, which provides the same value to `g` like Human patch.  
 
 ```
 Seed:38
@@ -560,9 +560,9 @@ TestFailure:692
 ```
 ### ConFix
 
-**Plausible**
-**Informative - Partial**
-ConFix patch delivers one of the two modifications of Human patch.
+**Plausible**  
+**Informative - Partial**  
+ConFix patch delivers one of the two modifications of Human patch.  
 
 ```
 Seed:83
@@ -646,9 +646,9 @@ TestFailure:1
 ```
 ### ConFix
 
-**Plausible**
-**Informative - Regression**
-ConFix patch solves the incorrect behaviour when `endIndex < startIndex`, but it does not work same as Human patch when `endIndex == -1`.
+**Plausible**  
+**Informative - Regression**  
+ConFix patch solves the incorrect behaviour when `endIndex < startIndex`, but it does not work same as Human patch when `endIndex == -1`.  
 
 ```
 Seed:74
@@ -750,10 +750,10 @@ TestFailure:529
 ```
 ### ConFix
 
-**Acceptable**
-The key changes of Human patch are deleting two if statements.
-ConFix patch disables the first if statement by changing its condition, since `fnNode.isReturn()` cannot be `true`.
-The second if statement is disabled by this first change, since one of its condition `hasSideEffects` is declared as `false` and this value is not changed due to the first disabled if statement.
+**Acceptable**  
+The key changes of Human patch are deleting two if statements.  
+ConFix patch disables the first if statement by changing its condition, since `fnNode.isReturn()` cannot be `true`.  
+The second if statement is disabled by this first change, since one of its condition `hasSideEffects` is declared as `false` and this value is not changed due to the first disabled if statement.  
 
 ```
 Seed:18
@@ -1037,11 +1037,11 @@ TestFailure:223
 ```
 ### ConFix
 
-**Acceptable**
-Human patch adds one more condition `negativeZero` which is `true` if `x` is negative zero `-0`.  
-ConFix patch modifies `x < 0` to `x < +1`, which is `true` if `x` is either `+0` or `-0`.  
+**Acceptable**  
+Human patch adds one more condition `negativeZero` which is `true` if `x` is negative zero `-0`.    
+ConFix patch modifies `x < 0` to `x < +1`, which is `true` if `x` is either `+0` or `-0`.   
 However, when `prev == '-'`, `x` cannot be `+0`.  
-Hence `x < +1` is equivalent to `x < 0 || negativeZero` at this if condition.
+Hence `x < +1` is equivalent to `x < 0 || negativeZero` at this if condition.  
 
 ```
 Seed:77
@@ -1139,9 +1139,9 @@ TestFailure:33
 ```
 ### ConFix
 
-**Plausible**
-**Informative - SameLoc**
-ConFix patch modifies the exactly same condition as Human patch.
+**Plausible**  
+**Informative - SameLoc**  
+ConFix patch modifies the exactly same condition as Human patch.  
 
 ```
 Seed:14
@@ -1184,9 +1184,9 @@ Looks like this is bug is identical or equivalent to closure62.
 ```
 ### ConFix
 
-**Plausible**
-**Informative - SameLoc**
-ConFix patch modifies the exactly same condition as Human patch.
+**Plausible**  
+**Informative - SameLoc**  
+ConFix patch modifies the exactly same condition as Human patch.  
 
 ```
 Seed:66
@@ -1291,8 +1291,8 @@ TestFailure:93
 ```
 ### ConFix
 
-**Acceptable**
-ConFix patch disables the deleted if statement by making the if condition always `false`.
+**Acceptable**  
+ConFix patch disables the deleted if statement by making the if condition always `false`.  
 
 ```
 Seed:77
@@ -1334,9 +1334,9 @@ TestFailure:19
 ```
 ### ConFix
 
-**Plausible**
-**Informative - SameLoc**
-ConFix patch modifies a different clause of the same return statement as Human patch.
+**Plausible**  
+**Informative - SameLoc**  
+ConFix patch modifies a different clause of the same return statement as Human patch.  
 
 ```
 Seed:67
@@ -1427,8 +1427,8 @@ TestFailure:1889
 ```
 ### ConFix
 
-**Identical**
-ConFix patch is identical to Human patch.
+**Identical**  
+ConFix patch is identical to Human patch.  
 
 ```
 Seed:20
@@ -1703,7 +1703,7 @@ TestFailure:40
 ```
 ### ConFix
 
-**Identical**
+**Identical**  
 ConFix patch is identical to Human patch.  
 
 ```
@@ -1797,8 +1797,8 @@ TestFailure:313
 ```
 ### ConFix
 
-**Equiv.**
-ConFix patch is semantically equivalent to Human patch, since `size + 1 - strLen` is always same as `size - strLen + 1`.
+**Equiv.**  
+ConFix patch is semantically equivalent to Human patch, since `size + 1 - strLen` is always same as `size - strLen + 1`.   
 
 ```
 Seed:96
@@ -1945,9 +1945,9 @@ TestFailure:11
 ```
 ### ConFix
 
-**Plausible**
-**Informative - Partial**
-ConFix patch disables the first deleted if statement in Human patch, but it does not have a corresponding change for the inserted if statement.
+**Plausible**  
+**Informative - Partial**  
+ConFix patch disables the first deleted if statement in Human patch, but it does not have a corresponding change for the inserted if statement.  
 
 ```
 Seed:22
@@ -2322,9 +2322,9 @@ TestFailure:66
 ```
 ### ConFix
 
-**Acceptable**
+**Acceptable**  
 The issue is the overflow of `n1n2prod * (n1 + n2 + 1)`, when it is compated as `int`.  
-By casting `n1` to `double`, `n1n2prod * (n1 + n2 + 1)` is computed as `double`, hence `VarU` has the correct value.
+By casting `n1` to `double`, `n1n2prod * (n1 + n2 + 1)` is computed as `double`, hence `VarU` has the correct value.  
 
 ```
 Seed:86
@@ -2576,8 +2576,8 @@ TestFailure:17
 ```
 ### ConFix
 
-**Identical**
-ConFix patch is identical to Human patch.
+**Identical**  
+ConFix patch is identical to Human patch.  
 
 ```
 Seed:54
@@ -2759,9 +2759,9 @@ TestFailure:8
 ```
 ### ConFix
 
-**Plausible**
-**Informative - SameLoc**
-ConFix patch modifies the same return statement as Human patch.
+**Plausible**  
+**Informative - SameLoc**  
+ConFix patch modifies the same return statement as Human patch.  
 
 ```
 Seed:13
@@ -3015,8 +3015,8 @@ TestFailure:154
 ```
 ### ConFix
 
-**Identical**
-ConFix patch is identical to Human patch.
+**Identical**  
+ConFix patch is identical to Human patch.  
 
 ```
 Seed:45
@@ -3128,9 +3128,9 @@ TestFailure:53
 ```
 ### ConFix
 
-**Plausible**
-**Informative - Partial**
-ConFix patch addresses the overflow issue for `dp * dp`, but it doesn't address overflow issue for `sum` unlike Human patch.
+**Plausible**  
+**Informative - Partial**  
+ConFix patch addresses the overflow issue for `dp * dp`, but it doesn't address overflow issue for `sum` unlike Human patch.  
 
 ```
 Seed:99
@@ -3179,10 +3179,10 @@ TestFailure:2215
 ```
 ### ConFix
 
-**Plausible**
-**Informative - SameLoc**
+**Plausible**  
+**Informative - SameLoc**  
 ConFix patch modifies the same variable declaration as Human patch.  
-We didn't count the method declaration part, since it is only dependent to the variable declaration modification.
+We didn't count the method declaration part, since it is only dependent to the variable declaration modification.  
 
 ```
 Seed:97
@@ -3224,9 +3224,9 @@ TestFailure:2
 ```
 ### ConFix
 
-**Plausible**
-**Informative - SameLoc**
-ConFix patch modifies the value of `j` like Human patch.
+**Plausible**  
+**Informative - SameLoc**  
+ConFix patch modifies the value of `j` like Human patch.  
 
 ```
 Seed:79
@@ -3329,9 +3329,9 @@ TestFailure:0
 ```
 ### ConFix
 
-**Plausible**
-**Informative - SameLoc**
-ConFix patch modifies the same if condition as Human patch.
+**Plausible**  
+**Informative - SameLoc**  
+ConFix patch modifies the same if condition as Human patch.  
 
 ```
 Seed:91
@@ -3431,9 +3431,9 @@ TestFailure:96
 ```
 ### ConFix
 
-**Plausible**
-**Informative - SameLoc**
-ConFix patch modifies the same if condition as Human patch.
+**Plausible**  
+**Informative - SameLoc**  
+ConFix patch modifies the same if condition as Human patch.  
 
 ```
 Seed:1
@@ -3533,8 +3533,8 @@ TestFailure:1133
 ```
 ### ConFix
 
-**Acceptable**
-ConFix patch prevents the same overflow issue as Human patch, which discussed in https://issues.apache.org/jira/browse/MATH-238.
+**Acceptable**  
+ConFix patch prevents the same overflow issue as Human patch, which discussed in https://issues.apache.org/jira/browse/MATH-238.  
 
 ```
 Seed:21
@@ -3676,12 +3676,12 @@ TestFailure:3
 ```
 ### ConFix
 
-**Plausible**
-**Informative - Regression**
+**Plausible**  
+**Informative - Regression**  
 The difference between Human patch and ConFix patch is calling different constructors for `newPartial`.  
 Human patch provides additional verifications for values by calling `Partial(newTypes, newValues, iChronology)` instead of `Partial(iChronology, newTypes, newValues)`, as discussed in https://github.com/JodaOrg/joda-time/issues/88.  
-ConFix patch calls `Partial(newTypes, newValues)`, which internally calls `Partial(newTypes, newValues, null)`.  
-It works same as Human patch if `iChronology` is `null` or default value, but it works incorrectly otherwise. 
+ConFix patch calls `Partial(newTypes, newValues)`, which internally calls `Partial(newTypes, newValues, null)`.   
+It works same as Human patch if `iChronology` is `null` or default value, but it works incorrectly otherwise.  
 
 ```
 Seed:74
@@ -3725,15 +3725,15 @@ TestFailure:337
 ```
 ### ConFix
 
-**Plausible**
-**Informative - Regression**
-The key issue is that `defaultYear` value is decided by `instantLocal`, not `instantMillis`.
-Hence Human patch updates `instantLocal` to `instantMillis`.  
+**Plausible**  
+**Informative - Regression**  
+The key issue is that `defaultYear` value is decided by `instantLocal`, not `instantMillis`.  
+Hence Human patch updates `instantLocal` to `instantMillis`.    
 It is also delivered by ConFix patch.  
 
-The key difference between Human patch and ConFix patch is the location of `defaultYear` declaration.
-In Human patch, `chrono` is relaced with `DateTimeUtils.getChronology(chrono)`.
-ConFix patch also has similar effect, since `selectChronology(chrono)` is defined as follows. 
+The key difference between Human patch and ConFix patch is the location of `defaultYear` declaration.  
+In Human patch, `chrono` is relaced with `DateTimeUtils.getChronology(chrono)`.  
+ConFix patch also has similar effect, since `selectChronology(chrono)` is defined as follows.  
 ```
     private Chronology selectChronology(Chronology chrono) {
         chrono = DateTimeUtils.getChronology(chrono);

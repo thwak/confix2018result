@@ -1,0 +1,17 @@
+Class:org.apache.commons.math.distribution.FDistributionImpl
+replace
+return ret;
+with
+return 0;
+
+at line 148
+Applied Change
+replace
+return var0;
+at Block::null[statements]
+with
+return 0;
+from
+hadoop-a33cbca:hadoop-hdfs-project/hadoop-hdfs-nfs/src/main/java/org/apache/hadoop/hdfs/nfs/nfs3/WriteCtx.java:dumpData:2231
+1
+P:MethodDeclaration{statements},L:Assignment{statements},R:

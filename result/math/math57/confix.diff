@@ -1,0 +1,11 @@
+--- ../result/math/math57/buggy/org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java	2018-06-28 05:07:30.103294692 +0000
++++ ../result/math/math57/confix/org/apache/commons/math/stat/clustering/KMeansPlusPlusClusterer.java	2018-06-28 05:07:30.099294744 +0000
+@@ -96,7 +96,7 @@
+         assignPointsToClusters(clusters, points);
+ 
+         // iterate through updating the centers until we're done
+-        final int max = (maxIterations < 0) ? Integer.MAX_VALUE : maxIterations;
++        final int max = (maxIterations < +1) ? Integer.MAX_VALUE : maxIterations;
+         for (int count = 0; count < max; count++) {
+             boolean clusteringChanged = false;
+             List<Cluster<T>> newClusters = new ArrayList<Cluster<T>>();

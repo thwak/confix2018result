@@ -1,0 +1,11 @@
+--- ../result/closure/closure46/buggy/com/google/javascript/rhino/jstype/RecordType.java	2018-06-28 05:07:28.191319541 +0000
++++ ../result/closure/closure46/confix/com/google/javascript/rhino/jstype/RecordType.java	2018-06-28 05:07:28.191319541 +0000
+@@ -139,7 +139,7 @@
+ 
+   @Override
+   public JSType getLeastSupertype(JSType that) {
+-    if (!that.isRecordType()) {
++    if (!that.isNumberObjectType()) {
+       return super.getLeastSupertype(that);
+     }
+     RecordTypeBuilder builder = new RecordTypeBuilder(registry);

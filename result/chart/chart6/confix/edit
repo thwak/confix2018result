@@ -1,0 +1,15 @@
+Class:org.jfree.chart.util.ShapeList
+insert
+index=0;
+
+at Insert Before
+MethodInvocation::null(line 81)
+Context:P:MethodDeclaration{statements},L:,R:MethodInvocation{statements}
+Applied Change
+insert
+var0 = 0
+at MethodDeclaration::null[statements]
+from
+hadoop-36cabb6:hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/fs/shell/Command.java:processPathArgument:8775
+1
+P:MethodDeclaration{statements},L:,R:MethodInvocation{statements}

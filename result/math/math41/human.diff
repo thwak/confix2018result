@@ -1,0 +1,11 @@
+--- ../result/math/math41/buggy/org/apache/commons/math/stat/descriptive/moment/Variance.java	2018-06-28 05:07:29.883297552 +0000
++++ ../result/math/math41/human/org/apache/commons/math/stat/descriptive/moment/Variance.java	2018-06-28 05:07:29.891297448 +0000
+@@ -517,7 +517,7 @@
+                 }
+ 
+                 double sumWts = 0;
+-                for (int i = 0; i < weights.length; i++) {
++                for (int i = begin; i < begin + length; i++) {
+                     sumWts += weights[i];
+                 }
+ 

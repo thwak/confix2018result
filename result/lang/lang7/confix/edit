@@ -1,0 +1,16 @@
+Class:org.apache.commons.lang3.math.NumberUtils
+update
+startsWith
+to
+endsWith
+at line 452
+Applied Change
+update
+method0
+at MethodInvocation::null[name]
+to
+method0
+from
+hadoop-c6f7d02:hadoop-tools/hadoop-extras/src/main/java/org/apache/hadoop/tools/Logalyzer.java:
+15
+P:MethodInvocation{name},L:{42},R:{45}

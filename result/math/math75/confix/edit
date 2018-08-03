@@ -1,0 +1,16 @@
+Class:org.apache.commons.math.stat.Frequency
+update
+getCumPct
+to
+getPct
+at line 303
+Applied Change
+update
+method0
+at MethodInvocation::null[name]
+to
+method0
+from
+lucene-873fbbc:src/java/org/apache/lucene/index/IndexFileDeleter.java:
+3
+P:MethodInvocation{name},L:,R:CastExpression{arguments}

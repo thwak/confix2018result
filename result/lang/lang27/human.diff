@@ -1,0 +1,21 @@
+--- ../result/lang/lang27/buggy/org/apache/commons/lang3/math/NumberUtils.java	2018-06-28 05:07:28.579314499 +0000
++++ ../result/lang/lang27/human/org/apache/commons/lang3/math/NumberUtils.java	2018-06-28 05:07:28.611314084 +0000
+@@ -476,7 +476,7 @@
+         if (decPos > -1) {
+ 
+             if (expPos > -1) {
+-                if (expPos < decPos) {
++                if (expPos < decPos || expPos > str.length()) {
+                     throw new NumberFormatException(str + " is not a valid number.");
+                 }
+                 dec = str.substring(decPos + 1, expPos);
+@@ -486,6 +486,9 @@
+             mant = str.substring(0, decPos);
+         } else {
+             if (expPos > -1) {
++                if (expPos > str.length()) {
++                    throw new NumberFormatException(str + " is not a valid number.");
++                }
+                 mant = str.substring(0, expPos);
+             } else {
+                 mant = str;

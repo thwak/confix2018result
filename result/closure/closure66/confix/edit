@@ -1,0 +1,15 @@
+Class:com.google.javascript.jscomp.TypeCheck
+insert
+nullCount=n.getSideEffectFlags();
+
+at Insert After
+MethodInvocation::null(line 1904)
+Context:P:IfStatement{statements},L:{32{42}{42}{42}},R:
+Applied Change
+insert
+var0 = var1.method0()
+at IfStatement::null[statements]
+from
+derby-20bd3c0:java/engine/org/apache/derby/impl/sql/compile/BaseTableNumbersVisitor.java:
+2
+P:IfStatement{statements},L:{32{42}{42}{42}},R:

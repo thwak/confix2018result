@@ -1,0 +1,12 @@
+--- ../result/chart/chart6/buggy/org/jfree/chart/util/ShapeList.java	2018-06-28 05:07:27.935322867 +0000
++++ ../result/chart/chart6/confix/org/jfree/chart/util/ShapeList.java	2018-06-28 05:07:27.927322971 +0000
+@@ -78,7 +78,8 @@
+      * @param shape  the {@link Shape}.
+      */
+     public void setShape(int index, Shape shape) {
+-        set(index, shape);
++        index = 0;
++		set(index, shape);
+     }
+ 
+     /**

@@ -1,0 +1,11 @@
+--- ../result/lang/lang61/buggy/org/apache/commons/lang/text/StrBuilder.java	2018-06-28 05:07:28.955309614 +0000
++++ ../result/lang/lang61/confix/org/apache/commons/lang/text/StrBuilder.java	2018-06-28 05:07:28.935309874 +0000
+@@ -1773,7 +1773,7 @@
+             return -1;
+         }
+         char[] thisBuf = buffer;
+-        int len = thisBuf.length - strLen;
++        int len = size + 1 - strLen;
+         outer:
+         for (int i = startIndex; i < len; i++) {
+             for (int j = 0; j < strLen; j++) {

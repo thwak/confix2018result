@@ -1,0 +1,18 @@
+--- ../result/chart/chart6/buggy/org/jfree/chart/util/ShapeList.java	2018-06-28 05:07:27.935322867 +0000
++++ ../result/chart/chart6/human/org/jfree/chart/util/ShapeList.java	2018-06-28 05:07:27.939322815 +0000
+@@ -108,7 +108,14 @@
+         if (!(obj instanceof ShapeList)) {
+             return false;
+         }
+-        return super.equals(obj);
++        ShapeList that = (ShapeList) obj;
++        int listSize = size();
++        for (int i = 0; i < listSize; i++) {
++           if (!ShapeUtilities.equal((Shape) get(i), (Shape) that.get(i))) {
++               return false;
++           }
++        }
++        return true;
+ 
+     }
+ 

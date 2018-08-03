@@ -1,0 +1,11 @@
+--- ../result/lang/lang21/buggy/org/apache/commons/lang3/time/DateUtils.java	2018-06-28 05:07:28.363317306 +0000
++++ ../result/lang/lang21/confix/org/apache/commons/lang3/time/DateUtils.java	2018-06-28 05:07:28.359317358 +0000
+@@ -259,7 +259,7 @@
+         if (cal1 == null || cal2 == null) {
+             throw new IllegalArgumentException("The date must not be null");
+         }
+-        return (cal1.get(Calendar.MILLISECOND) == cal2.get(Calendar.MILLISECOND) &&
++        return (cal1.get(Calendar.DST_OFFSET) == cal2.get(Calendar.MILLISECOND) &&
+                 cal1.get(Calendar.SECOND) == cal2.get(Calendar.SECOND) &&
+                 cal1.get(Calendar.MINUTE) == cal2.get(Calendar.MINUTE) &&
+                 cal1.get(Calendar.HOUR) == cal2.get(Calendar.HOUR) &&

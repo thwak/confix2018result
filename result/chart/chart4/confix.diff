@@ -1,0 +1,11 @@
+--- ../result/chart/chart4/buggy/org/jfree/chart/plot/XYPlot.java	2018-06-28 05:07:27.891323439 +0000
++++ ../result/chart/chart4/confix/org/jfree/chart/plot/XYPlot.java	2018-06-28 05:07:27.879323595 +0000
+@@ -4490,7 +4490,7 @@
+                     }
+                 }
+                 
+-                    Collection c = r.getAnnotations();
++                    Collection c = getAnnotations();
+                     Iterator i = c.iterator();
+                     while (i.hasNext()) {
+                         XYAnnotation a = (XYAnnotation) i.next();

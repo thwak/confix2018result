@@ -1,0 +1,11 @@
+--- ../result/chart/chart25/buggy/org/jfree/chart/renderer/category/StatisticalBarRenderer.java	2018-06-28 05:07:27.819324375 +0000
++++ ../result/chart/chart25/confix/org/jfree/chart/renderer/category/StatisticalBarRenderer.java	2018-06-28 05:07:27.811324479 +0000
+@@ -203,7 +203,7 @@
+         }
+         StatisticalCategoryDataset statData = (StatisticalCategoryDataset) data;
+ 
+-        PlotOrientation orientation = plot.getOrientation();
++        PlotOrientation orientation = null;
+         if (orientation == PlotOrientation.HORIZONTAL) {
+             drawHorizontalItem(g2, state, dataArea, plot, domainAxis, 
+                     rangeAxis, statData, row, column);

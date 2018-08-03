@@ -1,0 +1,11 @@
+--- ../result/math/math79/buggy/org/apache/commons/math/util/MathUtils.java	2018-06-28 05:07:30.523289232 +0000
++++ ../result/math/math79/confix/org/apache/commons/math/util/MathUtils.java	2018-06-28 05:07:30.515289336 +0000
+@@ -1624,7 +1624,7 @@
+       int sum = 0;
+       for (int i = 0; i < p1.length; i++) {
+           final int dp = p1[i] - p2[i];
+-          sum += dp * dp;
++          sum += ((double) dp) * dp;
+       }
+       return Math.sqrt(sum);
+     }

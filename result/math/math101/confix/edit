@@ -1,0 +1,19 @@
+Class:org.apache.commons.math.complex.ComplexFormat
+insert
+if (source.charAt(source.length() - 1) != Locale.PRIVATE_USE_EXTENSION) {
+  source+=Locale.PRIVATE_USE_EXTENSION;
+}
+
+at Insert Before
+VariableDeclarationStatement::null(line 321)
+Context:P:MethodDeclaration{statements},L:,R:VariableDeclarationStatement{statements}
+Applied Change
+insert
+if (var0.charAt(var0.length() -1) != var1) {
+            var0 += var1;
+        }
+at MethodDeclaration::null[statements]
+from
+derby-20e986d:java/engine/org/apache/derby/impl/io/vfmem/DataStore.java:_deleteAll:9568
+1
+P:MethodDeclaration{statements},L:,R:VariableDeclarationStatement{statements}

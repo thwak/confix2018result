@@ -1,0 +1,11 @@
+--- ../result/math/math49/buggy/org/apache/commons/math/linear/OpenMapRealVector.java	2018-06-28 05:07:29.995296096 +0000
++++ ../result/math/math49/confix/org/apache/commons/math/linear/OpenMapRealVector.java	2018-06-28 05:07:29.987296200 +0000
+@@ -661,7 +661,7 @@
+     /** {@inheritDoc} */
+     public void setEntry(int index, double value) {
+         checkIndex(index);
+-        if (!isDefaultValue(value)) {
++        if (!isDefaultValue(epsilon)) {
+             entries.put(index, value);
+         } else if (entries.containsKey(index)) {
+             entries.remove(index);

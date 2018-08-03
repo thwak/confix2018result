@@ -1,0 +1,11 @@
+--- ../result/lang/lang43/buggy/org/apache/commons/lang/text/ExtendedMessageFormat.java	2018-06-28 05:07:28.763312108 +0000
++++ ../result/lang/lang43/confix/org/apache/commons/lang/text/ExtendedMessageFormat.java	2018-06-28 05:07:28.759312160 +0000
+@@ -155,7 +155,7 @@
+         while (pos.getIndex() < pattern.length()) {
+             switch (c[pos.getIndex()]) {
+             case QUOTE:
+-                appendQuotedString(pattern, pos, stripCustom, true);
++                appendQuotedString(pattern, pos, stripCustom, false);
+                 break;
+             case START_FE:
+                 fmtCount++;

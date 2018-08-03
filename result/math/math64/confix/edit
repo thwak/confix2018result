@@ -1,0 +1,14 @@
+Class:org.apache.commons.math.optimization.general.LevenbergMarquardtOptimizer
+insert
+false
+at Insert After
+SimpleName::objective(line 365)
+Context:P:ClassInstanceCreation{arguments},L:{42},R:
+Applied Change
+insert
+false
+at ClassInstanceCreation::null[arguments]
+from
+hadoop-0815a6f:hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/FSNamesystem.java:
+3
+P:ClassInstanceCreation{arguments},L:{42},R:

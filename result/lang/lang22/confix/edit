@@ -1,0 +1,16 @@
+Class:org.apache.commons.lang3.math.Fraction
+update
+u
+to
+v
+at line 584
+Applied Change
+update
+var0
+at MethodInvocation::null[arguments]
+to
+var0
+from
+hadoop-a3151c4:hadoop-mapreduce-project/hadoop-mapreduce-client/hadoop-mapreduce-client-core/src/main/java/org/apache/hadoop/mapreduce/JobSubmitter.java:
+174
+P:MethodInvocation{arguments},L:SimpleName{name},R:

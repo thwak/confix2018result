@@ -1,0 +1,16 @@
+Class:org.apache.commons.lang3.math.NumberUtils
+update
+expPos
+to
+decPos
+at line 488
+Applied Change
+update
+var0
+at InfixExpression::!=[leftOperand]
+to
+var0
+from
+derby-70ff9b0:java/engine/org/apache/derby/diag/ErrorLogReader.java:
+1
+P:InfixExpression{leftOperand},L:,R:{38-{34}}

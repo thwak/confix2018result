@@ -1,0 +1,11 @@
+--- ../result/math/math88/buggy/org/apache/commons/math/optimization/linear/SimplexTableau.java	2018-06-28 05:07:30.835285176 +0000
++++ ../result/math/math88/confix/org/apache/commons/math/optimization/linear/SimplexTableau.java	2018-06-28 05:07:30.823285332 +0000
+@@ -335,7 +335,7 @@
+                     (restrictToNonNegative ? 0 : mostNegative);
+             if (basicRow != null) {
+                 for (int j = getNumObjectiveFunctions(); j < getNumObjectiveFunctions() + i; j++) {
+-                    if (tableau.getEntry(basicRow, j) == 1) {
++                    if (tableau.getEntry(basicRow, i) == 1) {
+                          coefficients[i] = 0;
+                     }
+                 }

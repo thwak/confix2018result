@@ -1,0 +1,19 @@
+--- ../result/math/math78/buggy/org/apache/commons/math/ode/events/EventState.java	2018-06-28 05:07:30.475289856 +0000
++++ ../result/math/math78/confix/org/apache/commons/math/ode/events/EventState.java	2018-06-28 05:07:30.471289908 +0000
+@@ -24,6 +24,7 @@
+ import org.apache.commons.math.analysis.solvers.BrentSolver;
+ import org.apache.commons.math.ode.DerivativeException;
+ import org.apache.commons.math.ode.sampling.StepInterpolator;
++import java.util.Map;
+ 
+ /** This class handles the state for one {@link EventHandler
+  * event handler} during integration steps.
+@@ -94,7 +95,7 @@
+     public EventState(final EventHandler handler, final double maxCheckInterval,
+                       final double convergence, final int maxIterationCount) {
+         this.handler           = handler;
+-        this.maxCheckInterval  = maxCheckInterval;
++        this.maxCheckInterval  = t0;
+         this.convergence       = Math.abs(convergence);
+         this.maxIterationCount = maxIterationCount;
+ 

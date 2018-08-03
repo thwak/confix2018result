@@ -1,0 +1,16 @@
+Class:com.google.javascript.rhino.jstype.RecordType
+update
+isRecordType
+to
+isNumberObjectType
+at line 142
+Applied Change
+update
+method0
+at MethodInvocation::null[name]
+to
+method0
+from
+hadoop-3532b9d:hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/datanode/BlockSender.java:
+779
+P:MethodInvocation{name},L:{42},R:

@@ -1,0 +1,11 @@
+--- ../result/math/math81/buggy/org/apache/commons/math/linear/EigenDecompositionImpl.java	2018-06-28 05:07:30.663287412 +0000
++++ ../result/math/math81/confix/org/apache/commons/math/linear/EigenDecompositionImpl.java	2018-06-28 05:07:30.615288036 +0000
+@@ -1523,7 +1523,7 @@
+                     tau = s;
+ 
+                 }
+-            } else if (dMin == dN2) {
++            } else if (sigmaLow == dN2) {
+ 
+                 // case 5.
+                 tType = -5;

@@ -1,0 +1,11 @@
+--- ../result/lang/lang22/buggy/org/apache/commons/lang3/math/Fraction.java	2018-06-28 05:07:28.387316994 +0000
++++ ../result/lang/lang22/confix/org/apache/commons/lang3/math/Fraction.java	2018-06-28 05:07:28.383317046 +0000
+@@ -581,7 +581,7 @@
+     private static int greatestCommonDivisor(int u, int v) {
+         // From Commons Math:
+         //if either operand is abs 1, return 1:
+-        if (Math.abs(u) <= 1 || Math.abs(v) <= 1) {
++        if (Math.abs(v) <= 1 || Math.abs(v) <= 1) {
+             return 1;
+         }
+         // keep u and v negative, as negative integers range down to

@@ -1,0 +1,16 @@
+Class:org.jfree.chart.renderer.GrayPaintScale
+update
+v
+to
+value
+at line 125
+Applied Change
+update
+var0
+at Assignment::=[leftHandSide]
+to
+var0
+from
+hadoop-a33cbca:hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/hadoop-yarn-applications-distributedshell/src/main/java/org/apache/hadoop/yarn/applications/distributedshell/ApplicationMaster.java:
+107
+P:Assignment{leftHandSide},L:,R:MethodInvocation{rightHandSide}

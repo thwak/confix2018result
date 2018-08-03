@@ -1,0 +1,16 @@
+--- ../result/math/math95/buggy/org/apache/commons/math/distribution/FDistributionImpl.java	2018-06-28 05:07:30.947283720 +0000
++++ ../result/math/math95/human/org/apache/commons/math/distribution/FDistributionImpl.java	2018-06-28 05:07:30.971283408 +0000
+@@ -141,10 +141,12 @@
+      * @return initial domain value
+      */
+     protected double getInitialDomain(double p) {
+-        double ret;
++        double ret = 1.0;
+         double d = getDenominatorDegreesOfFreedom();
++        if (d > 2.0) {
+             // use mean
+             ret = d / (d - 2.0);
++        }
+         return ret;
+     }
+     

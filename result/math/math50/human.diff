@@ -1,0 +1,13 @@
+--- ../result/math/math50/buggy/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java	2018-06-28 05:07:30.031295628 +0000
++++ ../result/math/math50/human/org/apache/commons/math/analysis/solvers/BaseSecantSolver.java	2018-06-28 05:07:30.095294796 +0000
+@@ -184,10 +184,6 @@
+                     break;
+                 case REGULA_FALSI:
+                     // Nothing.
+-                    if (x == x1) {
+-                        x0 = 0.5 * (x0 + x1 - FastMath.max(rtol * FastMath.abs(x1), atol));
+-                        f0 = computeObjectiveValue(x0);
+-                    }
+                     break;
+                 default:
+                     // Should never happen.

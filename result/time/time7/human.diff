@@ -1,0 +1,13 @@
+--- ../result/time/time7/buggy/org/joda/time/format/DateTimeFormatter.java	2018-06-28 05:07:31.087281900 +0000
++++ ../result/time/time7/human/org/joda/time/format/DateTimeFormatter.java	2018-06-28 05:07:31.111281588 +0000
+@@ -705,9 +705,9 @@
+         
+         long instantMillis = instant.getMillis();
+         Chronology chrono = instant.getChronology();
++        int defaultYear = DateTimeUtils.getChronology(chrono).year().get(instantMillis);
+         long instantLocal = instantMillis + chrono.getZone().getOffset(instantMillis);
+         chrono = selectChronology(chrono);
+-        int defaultYear = chrono.year().get(instantLocal);
+         
+         DateTimeParserBucket bucket = new DateTimeParserBucket(
+             instantLocal, chrono, iLocale, iPivotYear, defaultYear);

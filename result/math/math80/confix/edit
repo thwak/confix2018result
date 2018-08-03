@@ -1,0 +1,16 @@
+Class:org.apache.commons.math.linear.EigenDecompositionImpl
+replace
+n
+with
+tType
+at line 1135
+Applied Change
+replace
+var0
+at InfixExpression::*[rightOperand]
+with
+var0
+from
+lucene-6b6464e:src/java/org/apache/lucene/analysis/CharArraySet.java:
+1
+P:InfixExpression{rightOperand},L:{34},R:

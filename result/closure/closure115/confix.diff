@@ -1,0 +1,11 @@
+--- ../result/closure/closure115/buggy/com/google/javascript/jscomp/FunctionInjector.java	2018-06-28 05:07:28.055321308 +0000
++++ ../result/closure/closure115/confix/com/google/javascript/jscomp/FunctionInjector.java	2018-06-28 05:07:28.055321308 +0000
+@@ -698,7 +698,7 @@
+     if (block.hasChildren()) {
+       Preconditions.checkState(block.hasOneChild());
+       Node stmt = block.getFirstChild();
+-      if (stmt.isReturn()) {
++      if (fnNode.isReturn()) {
+         hasSideEffects = NodeUtil.mayHaveSideEffects(stmt.getFirstChild(), compiler);
+       }
+     }

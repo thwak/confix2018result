@@ -1,0 +1,16 @@
+Class:org.apache.commons.math.optimization.linear.SimplexTableau
+replace
+width
+with
+height
+at line 195
+Applied Change
+replace
+var0
+at InfixExpression::*[leftOperand]
+with
+var0
+from
+lucene-9b2c39f:src/java/org/apache/lucene/index/DocumentsWriter.java:
+2
+P:InfixExpression{leftOperand},L:,R:{34}

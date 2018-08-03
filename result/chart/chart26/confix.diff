@@ -1,0 +1,12 @@
+--- ../result/chart/chart26/buggy/org/jfree/chart/axis/Axis.java	2018-06-28 05:07:27.843324063 +0000
++++ ../result/chart/chart26/confix/org/jfree/chart/axis/Axis.java	2018-06-28 05:07:27.835324167 +0000
+@@ -896,7 +896,8 @@
+      * @see #getPlot()
+      */
+     public void setPlot(Plot plot) {
+-        this.plot = plot;
++        this.label = plot.getNoDataMessage();
++		this.plot = plot;
+         configure();
+     }
+ 

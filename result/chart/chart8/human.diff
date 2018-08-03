@@ -1,0 +1,11 @@
+--- ../result/chart/chart8/buggy/org/jfree/data/time/Week.java	2018-06-28 05:07:27.959322556 +0000
++++ ../result/chart/chart8/human/org/jfree/data/time/Week.java	2018-06-28 05:07:27.967322452 +0000
+@@ -172,7 +172,7 @@
+      */
+     public Week(Date time, TimeZone zone) {
+         // defer argument checking...
+-        this(time, RegularTimePeriod.DEFAULT_TIME_ZONE, Locale.getDefault());
++        this(time, zone, Locale.getDefault());
+     }
+ 
+     /**

@@ -1,0 +1,11 @@
+--- ../result/chart/chart24/buggy/org/jfree/chart/renderer/GrayPaintScale.java	2018-06-28 05:07:27.795324686 +0000
++++ ../result/chart/chart24/confix/org/jfree/chart/renderer/GrayPaintScale.java	2018-06-28 05:07:27.791324738 +0000
+@@ -122,7 +122,7 @@
+      */
+     public Paint getPaint(double value) {
+         double v = Math.max(value, this.lowerBound);
+-        v = Math.min(v, this.upperBound);
++        value = Math.min(v, this.upperBound);
+         int g = (int) ((value - this.lowerBound) / (this.upperBound 
+                 - this.lowerBound) * 255.0);
+         return new Color(g, g, g);

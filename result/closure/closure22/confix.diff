@@ -1,0 +1,11 @@
+--- ../result/closure/closure22/buggy/com/google/javascript/jscomp/CheckSideEffects.java	2018-06-28 05:07:28.143320165 +0000
++++ ../result/closure/closure22/confix/com/google/javascript/jscomp/CheckSideEffects.java	2018-06-28 05:07:28.139320217 +0000
+@@ -113,7 +113,7 @@
+           int ancestorType = an.getType();
+           if (ancestorType == Token.COMMA)
+             continue;
+-          if (ancestorType != Token.EXPR_RESULT && ancestorType != Token.BLOCK)
++          if (ancestorType != ancestorType && ancestorType != Token.BLOCK)
+             return;
+           else
+             break;

@@ -1,0 +1,16 @@
+Class:org.apache.commons.math.analysis.solvers.BaseSecantSolver
+update
+x1
+to
+x0
+at line 188
+Applied Change
+update
+var0
+at InfixExpression::<[rightOperand]
+to
+var0
+from
+hadoop-f7064d7:hadoop-yarn-project/hadoop-yarn/hadoop-yarn-applications/hadoop-yarn-applications-distributedshell/src/main/java/org/apache/hadoop/yarn/applications/distributedshell/ApplicationMaster.java:
+32
+P:InfixExpression{rightOperand},L:{42},R:

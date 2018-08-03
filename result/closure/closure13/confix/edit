@@ -1,0 +1,12 @@
+Class:com.google.javascript.jscomp.PeepholeOptimizationsPass
+delete
+return false;
+at line 160
+Applied Change
+delete
+return true;
+at IfStatement::null[statements]
+from
+hadoop-ceffdae:hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/FSNamesystem.java:
+6
+P:IfStatement{statements},L:,R:

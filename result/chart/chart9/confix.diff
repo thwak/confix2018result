@@ -1,0 +1,11 @@
+--- ../result/chart/chart9/buggy/org/jfree/data/time/TimeSeries.java	2018-06-28 05:07:27.979322296 +0000
++++ ../result/chart/chart9/confix/org/jfree/data/time/TimeSeries.java	2018-06-28 05:07:27.975322348 +0000
+@@ -941,7 +941,7 @@
+             endIndex = -(endIndex + 1); // this is first item AFTER end period
+             endIndex = endIndex - 1;    // so this is last item BEFORE end
+         }
+-        if (endIndex < 0) {
++        if (endIndex < startIndex) {
+             emptyRange = true;
+         }
+         if (emptyRange) {

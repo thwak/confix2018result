@@ -1,0 +1,18 @@
+--- ../result/chart/chart4/buggy/org/jfree/chart/plot/XYPlot.java	2018-06-28 05:07:27.891323439 +0000
++++ ../result/chart/chart4/human/org/jfree/chart/plot/XYPlot.java	2018-06-28 05:07:27.903323283 +0000
+@@ -4490,6 +4490,7 @@
+                     }
+                 }
+                 
++                if (r != null) {
+                     Collection c = r.getAnnotations();
+                     Iterator i = c.iterator();
+                     while (i.hasNext()) {
+@@ -4498,6 +4499,7 @@
+                             includedAnnotations.add(a);
+                         }
+                     }
++                }
+             }
+         }
+ 

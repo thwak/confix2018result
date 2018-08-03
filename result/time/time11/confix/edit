@@ -1,0 +1,16 @@
+Class:org.joda.time.tz.ZoneInfoCompiler
+insert
+if (cLenientISO == null) return false;
+
+at Insert Before
+ReturnStatement::null(line 78)
+Context:P:MethodDeclaration{statements},L:,R:{41{32{42}{42}}}
+Applied Change
+insert
+if (var0==null)
+        return false;
+at MethodDeclaration::null[statements]
+from
+lucene-1e70053:src/java/org/apache/lucene/index/ParallelReader.java:next:10286
+1
+P:MethodDeclaration{statements},L:,R:{41{32{42}{42}}}

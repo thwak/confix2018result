@@ -1,0 +1,12 @@
+--- ../result/math/math24/buggy/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java	2018-06-28 05:07:29.311304988 +0000
++++ ../result/math/math24/confix/org/apache/commons/math3/optimization/univariate/BrentOptimizer.java	2018-06-28 05:07:29.227306079 +0000
+@@ -248,7 +248,8 @@
+                     if (u < x) {
+                         a = u;
+                     } else {
+-                        b = u;
++                        current = previous;
++						b = u;
+                     }
+                     if (fu <= fw ||
+                         Precision.equals(w, x)) {

@@ -1,0 +1,16 @@
+Class:org.apache.commons.lang.time.DurationFormatUtils
+update
+add
+to
+set
+at line 438
+Applied Change
+update
+method0
+at MethodInvocation::null[name]
+to
+method0
+from
+collections-66c4b99:src/java/org/apache/commons/collections/CollectionUtils.java:
+527
+P:MethodInvocation{name},L:{42},R:{42}

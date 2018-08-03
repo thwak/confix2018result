@@ -1,0 +1,17 @@
+Class:org.apache.commons.math.stat.descriptive.moment.Variance
+replace
+length == 1
+with
+(+9 <= length && begin > 0) || (length < +9 && begin >= 0)
+at line 320
+Applied Change
+replace
+var0 >= 0
+at IfStatement::null[expression]
+with
+(-9 <= var0 && var1 > 0) ||
+        (var0 < -9 && var1 >= 0)
+from
+hadoop-06eb2c5:hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/FSImageFormat.java:
+1
+P:IfStatement{expression},L:,R:Block{thenStatement}

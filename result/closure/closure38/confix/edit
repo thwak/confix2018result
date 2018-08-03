@@ -1,0 +1,16 @@
+Class:com.google.javascript.jscomp.CodeConsumer
+replace
+0
+with
++1
+at line 245
+Applied Change
+replace
+0
+at InfixExpression::<[rightOperand]
+with
+-1
+from
+derby-96b9662:java/engine/org/apache/derby/iapi/types/RawToBinaryFormatStream.java:
+2
+P:InfixExpression{rightOperand},L:{42},R:

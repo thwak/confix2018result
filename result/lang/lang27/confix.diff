@@ -1,0 +1,11 @@
+--- ../result/lang/lang27/buggy/org/apache/commons/lang3/math/NumberUtils.java	2018-06-28 05:07:28.579314499 +0000
++++ ../result/lang/lang27/confix/org/apache/commons/lang3/math/NumberUtils.java	2018-06-28 05:07:28.559314759 +0000
+@@ -485,7 +485,7 @@
+             }
+             mant = str.substring(0, decPos);
+         } else {
+-            if (expPos > -1) {
++            if (decPos > -1) {
+                 mant = str.substring(0, expPos);
+             } else {
+                 mant = str;

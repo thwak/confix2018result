@@ -1,0 +1,15 @@
+Class:org.apache.commons.math3.ode.AbstractIntegrator
+insert
+clearEventHandlers();
+
+at Insert Before
+MethodInvocation::null(line 109)
+Context:P:MethodDeclaration{statements},L:,R:{32{42}{42}{42}}
+Applied Change
+insert
+method0()
+at MethodDeclaration::null[statements]
+from
+derby-c085d07:java/engine/org/apache/derby/impl/services/replication/net/ReplicationMessageReceive.java:sendMessage:14848
+2
+P:MethodDeclaration{statements},L:,R:{32{42}{42}{42}}

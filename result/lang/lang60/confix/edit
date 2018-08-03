@@ -1,0 +1,16 @@
+Class:org.apache.commons.lang.text.StrBuilder
+replace
+endIndex
+with
+startIndex - 1
+at line 1114
+Applied Change
+replace
+var0
+at InfixExpression::<[rightOperand]
+with
+var0-1
+from
+lucene-9716742:src/java/org/apache/lucene/index/DocumentsWriter.java:
+1
+P:InfixExpression{rightOperand},L:{42},R:

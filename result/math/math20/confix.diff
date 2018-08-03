@@ -1,0 +1,19 @@
+--- ../result/math/math20/buggy/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java	2018-06-28 05:07:29.191306547 +0000
++++ ../result/math/math20/confix/org/apache/commons/math3/optimization/direct/CMAESOptimizer.java	2018-06-28 05:07:29.187306599 +0000
+@@ -41,6 +41,7 @@
+ import org.apache.commons.math3.random.MersenneTwister;
+ import org.apache.commons.math3.random.RandomGenerator;
+ import org.apache.commons.math3.util.MathArrays;
++import java.net.InetSocketAddress;
+ 
+ /**
+  * <p>An implementation of the active Covariance Matrix Adaptation Evolution Strategy (CMA-ES)
+@@ -244,7 +245,7 @@
+      * @param lambda Population size.
+      */
+     public CMAESOptimizer(int lambda) {
+-        this(lambda, null, DEFAULT_MAXITERATIONS, DEFAULT_STOPFITNESS,
++        this(DEFAULT_MAXITERATIONS, null, DEFAULT_MAXITERATIONS, DEFAULT_STOPFITNESS,
+              DEFAULT_ISACTIVECMA, DEFAULT_DIAGONALONLY,
+              DEFAULT_CHECKFEASABLECOUNT, DEFAULT_RANDOMGENERATOR, false);
+     }

@@ -1,0 +1,16 @@
+Class:com.google.javascript.jscomp.LightweightMessageFormatter
+update
+sourceExcerpt
+to
+error.sourceName
+at line 98
+Applied Change
+update
+var0
+at MethodInvocation::null[expression]
+to
+var0
+from
+collections-b10fa43:src/main/java/org/apache/commons/collections/set/ListOrderedSet.java:
+605
+P:MethodInvocation{expression},L:,R:{42}

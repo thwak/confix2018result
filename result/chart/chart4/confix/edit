@@ -1,0 +1,12 @@
+Class:org.jfree.chart.plot.XYPlot
+delete
+r
+at line 4493
+Applied Change
+delete
+var0
+at MethodInvocation::null[expression]
+from
+collections-b10fa43:src/main/java/org/apache/commons/collections/set/ListOrderedSet.java:
+32
+P:MethodInvocation{expression},L:,R:SimpleName{name}

@@ -1,0 +1,11 @@
+--- ../result/chart/chart3/buggy/org/jfree/data/time/TimeSeries.java	2018-06-28 05:07:27.863323803 +0000
++++ ../result/chart/chart3/human/org/jfree/data/time/TimeSeries.java	2018-06-28 05:07:27.871323699 +0000
+@@ -1054,6 +1054,8 @@
+             throw new IllegalArgumentException("Requires start <= end.");
+         }
+         TimeSeries copy = (TimeSeries) super.clone();
++        copy.minY = Double.NaN;
++        copy.maxY = Double.NaN;
+         copy.data = new java.util.ArrayList();
+         if (this.data.size() > 0) {
+             for (int index = start; index <= end; index++) {

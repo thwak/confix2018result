@@ -1,0 +1,19 @@
+--- ../result/chart/chart5/buggy/org/jfree/data/xy/XYSeries.java	2018-06-28 05:07:27.915323127 +0000
++++ ../result/chart/chart5/human/org/jfree/data/xy/XYSeries.java	2018-06-28 05:07:27.923323023 +0000
+@@ -541,11 +541,15 @@
+         if (x == null) {
+             throw new IllegalArgumentException("Null 'x' argument.");
+         }
++        if (this.allowDuplicateXValues) {
++            add(x, y);
++            return null;
++        }
+ 
+         // if we get to here, we know that duplicate X values are not permitted
+         XYDataItem overwritten = null;
+         int index = indexOf(x);
+-        if (index >= 0 && !this.allowDuplicateXValues) {
++        if (index >= 0) {
+             XYDataItem existing = (XYDataItem) this.data.get(index);
+             try {
+                 overwritten = (XYDataItem) existing.clone();

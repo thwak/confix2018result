@@ -1,0 +1,18 @@
+--- ../result/math/math28/buggy/org/apache/commons/math3/optimization/linear/SimplexSolver.java	2018-06-28 05:07:29.391303948 +0000
++++ ../result/math/math28/confix/org/apache/commons/math3/optimization/linear/SimplexSolver.java	2018-06-28 05:07:29.379304104 +0000
+@@ -23,6 +23,7 @@
+ import org.apache.commons.math3.exception.MaxCountExceededException;
+ import org.apache.commons.math3.optimization.PointValuePair;
+ import org.apache.commons.math3.util.Precision;
++import java.util.HashMap;
+ 
+ 
+ /**
+@@ -74,7 +75,6 @@
+             // check if the entry is strictly smaller than the current minimum
+             // do not use a ulp/epsilon check
+             if (entry < minValue) {
+-                minValue = entry;
+                 minPos = i;
+             }
+         }

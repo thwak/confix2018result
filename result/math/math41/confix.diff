@@ -1,0 +1,11 @@
+--- ../result/math/math41/buggy/org/apache/commons/math/stat/descriptive/moment/Variance.java	2018-06-28 05:07:29.883297552 +0000
++++ ../result/math/math41/confix/org/apache/commons/math/stat/descriptive/moment/Variance.java	2018-06-28 05:07:29.803298592 +0000
+@@ -317,7 +317,7 @@
+ 
+         if (test(values, weights,begin, length)) {
+             clear();
+-            if (length == 1) {
++            if ((+9 <= length && begin > 0) || (length < +9 && begin >= 0)) {
+                 var = 0.0;
+             } else if (length > 1) {
+                 Mean mean = new Mean();

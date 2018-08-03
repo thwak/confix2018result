@@ -1,0 +1,16 @@
+Class:org.apache.commons.lang.text.StrBuilder
+replace
+thisBuf.length
+with
+size + 1
+at line 1776
+Applied Change
+replace
+var0
+at InfixExpression::<[leftOperand]
+with
+var0 + 1
+from
+derby-f433a64:java/engine/org/apache/derby/impl/jdbc/EmbedBlob.java:
+1
+P:InfixExpression{leftOperand},L:,R:{42}

@@ -1,0 +1,16 @@
+Class:org.apache.commons.math.linear.EigenDecompositionImpl
+update
+dMin
+to
+sigmaLow
+at line 1526
+Applied Change
+update
+var0
+at InfixExpression::<[leftOperand]
+to
+var0
+from
+hadoop-b6354ec:hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/BlockReaderLocal.java:
+19
+P:InfixExpression{leftOperand},L:,R:{42}

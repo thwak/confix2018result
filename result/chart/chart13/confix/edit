@@ -1,0 +1,16 @@
+Class:org.jfree.chart.block.BorderArrangement
+update
+w
+to
+h
+at line 450
+Applied Change
+update
+var0
+at ArrayAccess::null[array]
+to
+var0
+from
+hadoop-0815a6f:hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/web/resources/NamenodeWebHdfsMethods.java:
+19
+P:ArrayAccess{array},L:,R:{34}

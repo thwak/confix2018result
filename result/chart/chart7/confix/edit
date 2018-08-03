@@ -1,0 +1,16 @@
+Class:org.jfree.data.time.TimePeriodValues
+update
+minMiddleIndex
+to
+maxMiddleIndex
+at line 300
+Applied Change
+update
+var0
+at FieldAccess::null[name]
+to
+var0
+from
+hadoop-b268aa0:hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/crypto/key/KeyProviderCryptoExtension.java:
+171
+P:FieldAccess{name},L:{52},R:

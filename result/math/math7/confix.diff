@@ -1,0 +1,12 @@
+--- ../result/math/math7/buggy/org/apache/commons/math3/ode/AbstractIntegrator.java	2018-06-28 05:07:30.575288556 +0000
++++ ../result/math/math7/confix/org/apache/commons/math3/ode/AbstractIntegrator.java	2018-06-28 05:07:30.567288660 +0000
+@@ -106,7 +106,8 @@
+ 
+     /** {@inheritDoc} */
+     public void addStepHandler(final StepHandler handler) {
+-        stepHandlers.add(handler);
++        clearEventHandlers();
++		stepHandlers.add(handler);
+     }
+ 
+     /** {@inheritDoc} */

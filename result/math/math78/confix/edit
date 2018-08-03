@@ -1,0 +1,16 @@
+Class:org.apache.commons.math.ode.events.EventState
+update
+maxCheckInterval
+to
+t0
+at line 97
+Applied Change
+update
+var0
+at Assignment::=[rightHandSide]
+to
+var0
+from
+collections-68bbd2c:src/main/java/org/apache/commons/collections4/splitmap/AbstractIterableGetMapDecorator.java:
+71
+P:Assignment{rightHandSide},L:{22{52}{42}},R:

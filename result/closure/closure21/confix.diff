@@ -1,0 +1,19 @@
+--- ../result/closure/closure21/buggy/com/google/javascript/jscomp/CheckSideEffects.java	2018-06-28 05:07:28.123320425 +0000
++++ ../result/closure/closure21/confix/com/google/javascript/jscomp/CheckSideEffects.java	2018-06-28 05:07:28.119320477 +0000
+@@ -25,6 +25,7 @@
+ import com.google.javascript.rhino.Token;
+ 
+ import java.util.List;
++import java.util.Set;
+ 
+ /**
+  * Checks for non side effecting statements such as
+@@ -116,7 +117,7 @@
+       }
+       if (n == parent.getLastChild()) {
+         for (Node an : parent.getAncestors()) {
+-          int ancestorType = an.getType();
++          int ancestorType = parent.getType();
+           if (ancestorType == Token.COMMA) continue;
+           if (ancestorType != Token.EXPR_RESULT && ancestorType != Token.BLOCK) return;
+           else break;

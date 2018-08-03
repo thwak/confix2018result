@@ -1,0 +1,16 @@
+Class:org.apache.commons.math.analysis.solvers.BracketingNthOrderBrentSolver
+replace
+signChangeIndex
+with
+agingA + 1
+at line 260
+Applied Change
+replace
+var0
+at InfixExpression::<[leftOperand]
+with
+var0 + 1
+from
+derby-f433a64:java/engine/org/apache/derby/impl/jdbc/EmbedClob.java:
+1
+P:InfixExpression{leftOperand},L:,R:{42}

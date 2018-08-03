@@ -1,0 +1,11 @@
+--- ../result/lang/lang31/buggy/org/apache/commons/lang3/StringUtils.java	2018-06-28 05:07:28.679313200 +0000
++++ ../result/lang/lang31/confix/org/apache/commons/lang3/StringUtils.java	2018-06-28 05:07:28.643313668 +0000
+@@ -1443,7 +1443,7 @@
+ 		}
+ 		int csLength = cs.length();
+ 		int searchLength = searchChars.length;
+-		for (int i = 0; i < csLength; i++) {
++		for (int i = 1; i < csLength; i++) {
+ 			char ch = cs.charAt(i);
+ 			for (int j = 0; j < searchLength; j++) {
+ 				if (searchChars[j] == ch) {

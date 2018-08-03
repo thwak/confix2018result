@@ -1,0 +1,11 @@
+--- ../result/chart/chart8/buggy/org/jfree/data/time/Week.java	2018-06-28 05:07:27.959322556 +0000
++++ ../result/chart/chart8/confix/org/jfree/data/time/Week.java	2018-06-28 05:07:27.951322659 +0000
+@@ -195,7 +195,7 @@
+         if (locale == null) {
+             throw new IllegalArgumentException("Null 'locale' argument.");
+         }
+-        Calendar calendar = Calendar.getInstance(zone, locale);
++        Calendar calendar = Calendar.getInstance(locale);
+         calendar.setTime(time);
+ 
+         // sometimes the last few days of the year are considered to fall in

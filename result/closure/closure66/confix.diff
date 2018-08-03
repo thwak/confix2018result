@@ -1,0 +1,12 @@
+--- ../result/closure/closure66/buggy/com/google/javascript/jscomp/TypeCheck.java	2018-06-28 05:07:28.259318657 +0000
++++ ../result/closure/closure66/confix/com/google/javascript/jscomp/TypeCheck.java	2018-06-28 05:07:28.255318709 +0000
+@@ -1901,7 +1901,8 @@
+     }
+ 
+     if (n.getJSType() == null) {
+-      n.setJSType(type);
++      nullCount = n.getSideEffectFlags();
++	n.setJSType(type);
+     }
+   }
+ 

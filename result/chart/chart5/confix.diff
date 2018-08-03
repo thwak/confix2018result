@@ -1,0 +1,11 @@
+--- ../result/chart/chart5/buggy/org/jfree/data/xy/XYSeries.java	2018-06-28 05:07:27.915323127 +0000
++++ ../result/chart/chart5/confix/org/jfree/data/xy/XYSeries.java	2018-06-28 05:07:27.911323179 +0000
+@@ -524,7 +524,7 @@
+      * @since 1.0.10
+      */
+     public XYDataItem addOrUpdate(double x, double y) {
+-        return addOrUpdate(new Double(x), new Double(y));
++        return addOrUpdate(new Double(y), new Double(y));
+     }
+ 
+     /**

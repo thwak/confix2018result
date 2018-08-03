@@ -1,0 +1,16 @@
+Class:com.google.javascript.jscomp.LightweightMessageFormatter
+replace
+charno
+with
+error.lineNumber
+at line 98
+Applied Change
+replace
+var0
+at InfixExpression::!=[leftOperand]
+with
+var0
+from
+lucene-890d53a:src/java/org/apache/lucene/index/CheckIndex.java:
+1
+P:InfixExpression{leftOperand},L:,R:{32{42}{42}}

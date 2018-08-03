@@ -1,0 +1,16 @@
+Class:org.apache.commons.math.optimization.linear.SimplexSolver
+update
+epsilon
+to
+entry
+at line 82
+Applied Change
+update
+var0
+at MethodInvocation::null[arguments]
+to
+var0
+from
+derby-70ff9b0:java/engine/org/apache/derby/diag/StatementDuration.java:
+7
+P:MethodInvocation{arguments},L:{34},R:

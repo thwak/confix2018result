@@ -1,0 +1,12 @@
+Class:org.apache.commons.math3.optimization.linear.SimplexSolver
+delete
+minValue = entry
+at line 77
+Applied Change
+delete
+var0 = var1
+at IfStatement::null[statements]
+from
+lucene-e7179ea:src/java/org/apache/lucene/index/IndexWriter.java:
+1
+P:IfStatement{statements},L:,R:{7={42}{42}}

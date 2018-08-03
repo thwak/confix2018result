@@ -1,0 +1,16 @@
+Class:org.apache.commons.math.util.MathUtils
+replace
+u
+with
+((double)u)
+at line 412
+Applied Change
+replace
+var0
+at InfixExpression::*[leftOperand]
+with
+((double) var0)
+from
+hadoop-bdeee31:hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/FSNamesystem.java:
+1
+P:InfixExpression{leftOperand},L:,R:{42}

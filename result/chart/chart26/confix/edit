@@ -1,0 +1,15 @@
+Class:org.jfree.chart.axis.Axis
+insert
+this.label=plot.getNoDataMessage();
+
+at Insert Before
+Assignment::=(line 899)
+Context:P:MethodDeclaration{statements},L:,R:{7={22{52}{42}}{42}}
+Applied Change
+insert
+this.var0 = var1.method0()
+at MethodDeclaration::null[statements]
+from
+ivy-9858e60:src/java/org/apache/ivy/plugins/resolver/AbstractResolver.java:setRepositoryCacheManager:12221
+1
+P:MethodDeclaration{statements},L:,R:{7={22{52}{42}}{42}}

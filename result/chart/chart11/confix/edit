@@ -1,0 +1,16 @@
+Class:org.jfree.chart.util.ShapeUtilities
+update
+p1
+to
+p2
+at line 274
+Applied Change
+update
+var0
+at MethodInvocation::null[expression]
+to
+var0
+from
+collections-b10fa43:src/main/java/org/apache/commons/collections/set/ListOrderedSet.java:
+605
+P:MethodInvocation{expression},L:,R:{42}

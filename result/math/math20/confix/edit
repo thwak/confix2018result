@@ -1,0 +1,16 @@
+Class:org.apache.commons.math3.optimization.direct.CMAESOptimizer
+update
+lambda
+to
+DEFAULT_MAXITERATIONS
+at line 247
+Applied Change
+update
+var0
+at ConstructorInvocation::null[arguments]
+to
+var0
+from
+hadoop-a6b3cf9:hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/DFSClient.java:
+20
+P:ConstructorInvocation{arguments},L:,R:NullLiteral{arguments}

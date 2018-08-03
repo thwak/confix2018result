@@ -1,0 +1,10 @@
+--- ../result/closure/closure13/buggy/com/google/javascript/jscomp/PeepholeOptimizationsPass.java	2018-06-28 05:07:28.103320684 +0000
++++ ../result/closure/closure13/confix/com/google/javascript/jscomp/PeepholeOptimizationsPass.java	2018-06-28 05:07:28.099320736 +0000
+@@ -157,7 +157,6 @@
+     if (node.isFunction() || node.isScript()) {
+       ScopeState previous = traversalState.peek();
+       if (!previous.traverseChildScopes) {
+-        return false;
+       }
+       traversalState.push();
+     }

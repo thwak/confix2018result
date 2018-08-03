@@ -1,0 +1,16 @@
+Class:org.jfree.data.time.TimeSeries
+replace
+0
+with
+startIndex
+at line 944
+Applied Change
+replace
+64
+at InfixExpression::<[rightOperand]
+with
+var0
+from
+derby-a4e8535:java/engine/org/apache/derby/iapi/types/SQLChar.java:
+2
+P:InfixExpression{rightOperand},L:{42},R:

@@ -1,0 +1,15 @@
+Class:org.apache.commons.math3.optimization.univariate.BrentOptimizer
+insert
+current=previous;
+
+at Insert After
+Assignment::=(line 251)
+Context:P:IfStatement{statements},L:{7={42}{42}},R:
+Applied Change
+insert
+var0 = var1
+at IfStatement::null[statements]
+from
+derby-7fc54b9:java/engine/org/apache/derby/impl/sql/GenericActivationHolder.java:
+2
+P:IfStatement{statements},L:{7={42}{42}},R:

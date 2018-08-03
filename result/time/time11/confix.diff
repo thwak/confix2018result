@@ -1,0 +1,13 @@
+--- ../result/time/time11/buggy/org/joda/time/tz/ZoneInfoCompiler.java	2018-06-28 05:07:31.031282628 +0000
++++ ../result/time/time11/confix/org/joda/time/tz/ZoneInfoCompiler.java	2018-06-28 05:07:31.011282888 +0000
+@@ -75,7 +75,9 @@
+      * @return true to log verbosely
+      */
+     public static boolean verbose() {
+-        return cVerbose.get();
++        if (cLenientISO == null)
++			return false;
++		return cVerbose.get();
+     }
+ 
+     //-----------------------------------------------------------------------

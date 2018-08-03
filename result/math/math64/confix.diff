@@ -1,0 +1,11 @@
+--- ../result/math/math64/buggy/org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java	2018-06-28 05:07:30.347291520 +0000
++++ ../result/math/math64/confix/org/apache/commons/math/optimization/general/LevenbergMarquardtOptimizer.java	2018-06-28 05:07:30.299292144 +0000
+@@ -362,7 +362,7 @@
+ 
+                 // evaluate the function at x + p and calculate its norm
+                 updateResidualsAndCost();
+-                current = new VectorialPointValuePair(point, objective);
++                current = new VectorialPointValuePair(point, objective, false);
+ 
+                 // compute the scaled actual reduction
+                 double actRed = -1.0;

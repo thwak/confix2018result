@@ -1,0 +1,11 @@
+--- ../result/math/math95/buggy/org/apache/commons/math/distribution/FDistributionImpl.java	2018-06-28 05:07:30.947283720 +0000
++++ ../result/math/math95/confix/org/apache/commons/math/distribution/FDistributionImpl.java	2018-06-28 05:07:30.919284084 +0000
+@@ -145,7 +145,7 @@
+         double d = getDenominatorDegreesOfFreedom();
+             // use mean
+             ret = d / (d - 2.0);
+-        return ret;
++        return 0;
+     }
+     
+     /**

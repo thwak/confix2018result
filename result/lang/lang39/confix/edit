@@ -1,0 +1,16 @@
+Class:org.apache.commons.lang3.StringUtils
+update
+searchList.length
+to
+replaceIndex
+at line 3675
+Applied Change
+update
+var0
+at InfixExpression::<[rightOperand]
+to
+var0
+from
+hadoop-b268aa0:hadoop-common-project/hadoop-common/src/main/java/org/apache/hadoop/crypto/key/KeyProviderCryptoExtension.java:
+72
+P:InfixExpression{rightOperand},L:{42},R:

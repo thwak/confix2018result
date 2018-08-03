@@ -1,0 +1,16 @@
+Class:org.apache.commons.lang3.time.DateUtils
+update
+Calendar.MILLISECOND
+to
+Calendar.DST_OFFSET
+at line 262
+Applied Change
+update
+var0
+at MethodInvocation::null[arguments]
+to
+var0
+from
+hadoop-c1ee3ce:hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/hdfs/server/namenode/FSImageFormat.java:
+55
+P:MethodInvocation{arguments},L:SimpleName{name},R:

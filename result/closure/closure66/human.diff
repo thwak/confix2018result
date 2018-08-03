@@ -1,0 +1,12 @@
+--- ../result/closure/closure66/buggy/com/google/javascript/jscomp/TypeCheck.java	2018-06-28 05:07:28.259318657 +0000
++++ ../result/closure/closure66/human/com/google/javascript/jscomp/TypeCheck.java	2018-06-28 05:07:28.267318553 +0000
+@@ -513,7 +513,9 @@
+         // Object literal keys are handled with OBJECTLIT
+         if (!NodeUtil.isObjectLitKey(n, n.getParent())) {
+           ensureTyped(t, n, STRING_TYPE);
++        } else {
+           // Object literal keys are not typeable
++          typeable = false;
+         }
+         break;
+ 

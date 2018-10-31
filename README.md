@@ -32,3 +32,5 @@ hadoop-0815a6f:hadoop-hdfs-project/hadoop-hdfs/src/main/java/org/apache/hadoop/h
 19 //frequency in change pool
 P:ArrayAccess{array},L:,R:{34} //change's context
 ```
+
+Here is a draft with details of Confix - [confix draft](https://github.com/thwak/confix2018result/wiki/confix.pdf)
